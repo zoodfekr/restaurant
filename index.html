@@ -1,0 +1,663 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="javascript/js.js"></script>
+
+    <title>رستوران تهران</title>
+</head>
+
+<body class="p-0 w-100">
+    <!-- <div class="preloader d-flex justify-content-center align-Items-center  w-100 h-100" id="prel">
+        <img src="image/spin.gif" alt="preloader" class="" id="load">
+    </div> -->
+
+    <!-- nanbar1 -->
+    <div class="container-fluid bg-dark">
+        <div class="container-fluid ">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark pl-0">
+
+
+                <div class="nabvar-brand " id="brand">
+                    <img src="https://s6.uupload.ir/files/logo_zzj6.png" alt="" class=" rounded-circle mx-2 col-8 col-md-12" id="logo">
+
+                </div>
+
+
+                <div>
+
+                    <button class="navbar-toggler m-0 " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+                    <button class="navbar-toggler p-2 px-3 m-0 m-2 " type="button" data-toggle="collapse" data-target="#navbarsearch" aria-controls="navbarsearch" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fa fa-search" aria-hidden="true"></i>
+     </button>
+
+
+
+                </div>
+                <div class="collapse navbar-collapse navbar-expand-sm justify-content-center " id="navbarsearch">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
+                        <button class="btn btn-success my-2 my-sm-0 col-sm-12 col-md-2" type="submit"><i class="fa fa-search p-1" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <div class="collapse navbar-collapse  rc p-2 mr-4" id="navbarSupportedContent">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#">درباره ما <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item text-right">
+                            <a class="nav-link" href="#">تماس با ما <i class="fa fa-phone-square" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown text-right">
+                            <a class="nav-link dropdown-toggle" ref="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    شعبه ها
+  </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="z-index: 300;">
+                                <a class="dropdown-item" href="#">تهران</a>
+                                <a class="dropdown-item" href="#">اسلامشهر</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">شعبه مرکزی</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  text-right" href="#"> صفحه اصلی <i class="fa fa-home" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <!-- social-icon -->
+                <!-- <div class="  nav-icon d-none d-xl-block text-right px-1 mx-1" id="social-icon">
+                    <a href="https://fa-ir.facebook.com/" class="social"> <i class="fab fa-facebook p-1" style="color: rgb(3, 15, 247);"></i> </a>
+                    <a href="https://www.instagram.com/" class="social"> <i class="fab fa-twitter text-info p-1"></i> </a>
+                    <a href="https://twitter.com/?lang=fa" class="social"><i class="fab fa-instagram p-1" style="color: darkgoldenrod;"></i></a>
+                </div> -->
+                <!-- social-icon -->
+            </nav>
+
+        </div>
+    </div>
+    <!-- nanbar2 -->
+    <div class="container-fluid  Sticky-top p-0" style="background-color: #edf2f4; z-index: 200;">
+        <div class="container-fluid pr-1">
+
+            <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-between  sticky-top p-0 m-0">
+
+                <div class="pL-4 mL-2 mt-0 mb-0  ">
+                    <span class="row  pt-4 pb-0">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <p id="shopnumber">0</p>
+    </span>
+                </div>
+
+                <div class="navbar-expand p-0 " id="navbarNav">
+                    <ul class="navbar-nav d-flex flex-wrap flex-row-reverse  p-0">
+
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">خوراک</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#">پلو</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">چلو</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">خورشت</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">ایرانی</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#">دریایی</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <!-- header img -->
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="row height-max align-items-center">
+                <div class="col-md-9 ml-auto text-right pr-5 mr-5">
+
+                    <h2 class="text-uppercase my-2 title font">رستوران تهران</h2>
+                    <h4 class="text-uppercase suntext suntext">ارائه با کیفیت مطلوب</h4>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- middle section -->
+    <div class="container  d-flex flex-column justify-content-between align-content-between " style="width: 100%;min-height: 300px;">
+
+        <!-- top section -->
+        <div class=" col row d-flex justify-content-center my-2 flex-row-reverse flex-wrap  p-0" id="section-top-parent">
+
+
+            <div class=" container-fluid row flex-row-reverse justify-content-center  m-0 d-none d-md-flex ">
+
+                <div class="font mx-3 section-title py-3 px-5 my-1 section-top-element" id="section-right">
+                    <h1 class="section-font ">کیفیت مناسب</h1>
+                </div>
+
+                <div class="font mx-3  section-title2 py-3 px-5 my-1 section-top-element" id="section-left">
+                    <h1 class="section-font">قیمت مناسب</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- bottom section -->
+        <div class="row mt-3 " id="sections" style="display: none;">
+            <div class=" col-sm-6 col-lg-3 d-flex flex-column   text-center mt-3 skils1 one">
+                <a href="#"> <i class="fas fa-car skils-icon"></i> </a>
+                <h3 class="scills-header">پارکینگ اختصاصی</h3>
+                <div class="skils-underline"></div>
+                <p class="skils-text">پارکینگ طبقاتی به همراه نگهبان</p>
+            </div>
+
+            <div class=" col-sm-6 col-lg-3 d-flex flex-column   text-center mt-3 skils2 two">
+                <a href="#"> <i class="fa fa-wifi skils-icon"></i></a>
+                <h3 class="scills-header">اینترنت رایگان</h3>
+                <div class="skils-underline"></div>
+                <p class="skils-text">دسترسی به اینترنت با هزینه رایگان</p>
+            </div>
+
+            <div class=" col-sm-6 col-lg-3 d-flex flex-column   text-center mt-3 skils3 three">
+                <a href="#"> <i class="fa fa-wheelchair skils-icon"></i> </a>
+                <h3 class="scills-header">ویژه معلولین</h3>
+                <div class="skils-underline"></div>
+                <p class="skils-text">دارای مسیر ویژه برای معلولین</p>
+            </div>
+
+            <div class=" col-sm-6 col-lg-3 d-flex flex-column   text-center mt-3 skils4 four">
+                <a href="#"> <i class="fa fa-star skils-icon"></i> </a>
+                <h3 class="scills-header">رتبه برتر</h3>
+                <div class="skils-underline"></div>
+                <p class="skils-text">انتخاب شده به عنوان رستوران سال</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!-- menu & cards -->
+    <div class="container-fluid bottom-section ">
+        <!-- menu-title  -->
+        <div class=" container-fluid row flex-row-reverse justify-content-center  m-0 d-none d-md-flex ">
+
+            <div class="font mx-3  py-3 px-5 my-1 ">
+                <h1 class="section-font ">منو رستوران</h1>
+            </div>
+
+        </div>
+        <!-- button  -->
+        <div class="container  d-flex justify-content-end ">
+            <div class="row flex-row-reverse">
+                <button class="btn btn-outline-secondary  px-4 m-1 menu-btn ">جدیدترین ها</button>
+                <button class="btn btn-outline-secondary px-4 m-1 menu-btn ">پرفروش ترین ها</button>
+                <button class="btn btn-outline-secondary px-4 m-1 menu-btn ">همه</button>
+            </div>
+
+        </div>
+        <!-- cards  -->
+        <div class="cards  mt-2 py-3 row container m-auto">
+            <!-- card1 -->
+
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img5_k4m.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;margin-top: 0px;">استیک</h5>
+                    <p class="card-text text-white">استیک مرغ به همراه مخلفات</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 25/000 تومان</h2>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img3_oyfl.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">پنکیک</h5>
+                    <p class="card-text text-white">پنکیک مخصوص </p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 25/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img14_nkvc.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">پیتزا مخصوص</h5>
+                    <p class="card-text text-white">پیتزا مخصوص به همراه سبزیجات</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 25/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img1_lf3c.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">ساندیچ</h5>
+                    <p class="card-text text-white">ساندیچ لقمه مخصوص</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 15/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img7_udhx.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">استیک سرآشپز</h5>
+                    <p class="card-text text-white">استیک گوشت به همراه مخلفات</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 45/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img8_zosm.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">ماهی</h5>
+                    <p class="card-text text-white">ماهی با سبزیجات</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 9/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img10_6c93.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">تخم مرغ</h5>
+                    <p class="card-text text-white">تخم مرغ صبحانه</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 5/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img11_0q1.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">بشقاب طعم ها</h5>
+                    <p class="card-text text-white">مجموعه طهم ها </p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 60/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card text-dark col-lg-4 sol-sm-12 p-0" style="width: 18rem;">
+                <img src="https://s6.uupload.ir/files/img13_hnj8.jpeg" class="card-img-top img-fluid" alt="...">
+                <div class="card-body  d-flex flex-column justify-content-start card-bg">
+                    <h5 class="card-title font" style="background-color: rgb(209, 217, 218); border-radius: 50%;">ران مرغ</h5>
+                    <p class="card-text text-white">ران مرغ سرخ شده</p>
+                    <div class="btns d-flex justify-content-end  ">
+                        <a href="#" class="btn btn-primary card-link">سفارش</a>
+                    </div>
+                    <div class="price">
+                        <h2>قیمت 90/000 تومان</h2>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- questions -->
+    <div class="container-fluid questions">
+        <div class="container  row m-auto rounded">
+
+            <div class="gray  col-10 col-lg-6 m-auto row justify-content-end align-content-center align-items-center  rounded">
+                <a href="#" class="q-link"> <i class="fas fa-play col-4  question-icon"></i> </a>
+                <div class="question-content col-8 text-center ">
+                    <h2 class="font" style="color: black; font-size: 2rem; font-family: sahel;">موسیقی زنده</h2>
+                    <p class=" text-white "> اجرای موسیقی زنده با بهترین خواننده های روز دنیا در داخل رستوزان به صورت اختصاصی</p>
+                </div>
+            </div>
+
+            <div class="yellow col-10 col-lg-6 m-auto row justify-content-end align-content-center align-items-center rounded ">
+                <a href="# " class="q-link "> <i class="fa fa-camera col-4 question-icon "></i> </a>
+                <div class="question-content col-8 text-center ">
+                    <h2 class="font " style="color: black; font-size: 2rem; font-family: sahel;">منظره طبیعی</h2>
+                    <p class="text-white">دارای منظره طبیعی برای مشتریان عزیز داخل رستوران دارای محیط زیبا</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- feature  -->
+    <!-- feature-title  -->
+    <div class="feature container-fluid row flex-row-reverse justify-content-center  m-0 d-none d-md-flex ">
+
+        <div class="font mx-3  py-3 px-5 my-1 border">
+            <h1 class="section-font "> شعبه ها</h1>
+        </div>
+
+    </div>
+    <!--start feature  -->
+    <div class="container-fluid feature">
+        <div class="container ">
+            <div class="row">
+
+                <div class="info col-10 col-lg-6 mx-auto  align-items-center">
+                    <!-- single-feature  -->
+                    <div class="row feature-single ">
+                        <!-- <span class="feature-icon"><i class="fa fa-map-marker pt-1"></i></span> -->
+                        <h5 class="font-weight-bold mx-1 feature-p py-1">شعبه پرند</h5>
+                        <!-- <h5 class="mx-1 feature-p">رستوران تهران</h5> -->
+                    </div>
+                    <!-- single-feature  -->
+                    <div class="row feature-single ">
+                        <!-- <span class="feature-icon"><i class="fa fa-map-marker pt-1"></i></span> -->
+                        <h5 class="font-weight-bold mx-1 feature-p py-1">شعبه کرج</h5>
+                        <!-- <h5 class="mx-1 feature-p">رستوران تهران</h5> -->
+                    </div>
+                    <!-- single-feature  -->
+                    <div class="row feature-single ">
+                        <!-- <span class="feature-icon"><i class="fa fa-map-marker pt-1"></i></span> -->
+                        <h5 class="font-weight-bold mx-1 feature-p py-1">شعبه ونک</h5>
+                        <!-- <h5 class="mx-1 feature-p">رستوران تهران</h5> -->
+                    </div>
+                    <!-- single-feature  -->
+                    <div class="row feature-single ">
+                        <!-- <span class="feature-icon"><i class="fa fa-map-marker pt-1"></i></span> -->
+                        <h5 class="font-weight-bold mx-1 feature-p py-1">شعبه اسلامشهر</h5>
+                        <!-- <h5 class="mx-1 feature-p">رستوران تهران</h5> -->
+                    </div>
+                    <!-- single-feature  -->
+                    <div class="row feature-single ">
+                        <!-- <span class="feature-icon"><i class="fa fa-map-marker pt-1"></i></span> -->
+                        <h5 class="font-weight-bold mx-1 feature-p py-1">شعبه تهران</h5>
+                        <!-- <h5 class="mx-1 feature-p">رستوران تهران</h5> -->
+                    </div>
+                </div>
+
+                <div class="feature-image-box col-10 col-lg-6 mx-auto ">
+                    <img src="https://s6.uupload.ir/files/feature_2j8b.jpg" alt="feature-img" class="img-fluid feature-img rounded">
+                    <a href="#" class="feature-link"><i class="fas fa-search"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- gallery  -->
+    <div class="container-fluid gallery">
+        <!-- menu-title  -->
+        <div class=" container-fluid  justify-content-center  m-0 d-none d-flex flex-column">
+
+            <div class="font mx-3  py-3 px-5 my-1  d-flex justify-content-center">
+                <h1 class="section-font ">گالری تصاویر</h1>
+            </div>
+            <!-- gallery  -->
+            <div class="container border row m-auto px-0 gallery-box">
+                <!-- big picture  -->
+                <div class="col-sm-6">
+                    <div class="gallery-bg p-0">
+                        <img src="https://s6.uupload.ir/files/gallery5_lqzn.jpg" alt="" class="img-fluid gallery-img w-100">
+                    </div>
+                </div>
+                <!-- small picture  -->
+                <div class="col-sm-6">
+                    <!-- top  -->
+                    <div class="col-sm-12 row h-50 ">
+                        <div class="col-sm-6  d-flex align-items-center gallery-mini">
+                            <div class="gallery-bg">
+                                <img src="https://s6.uupload.ir/files/gallery1_vdvh.jpg" alt="" class="img-fluid gallery-img">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6  d-flex align-items-center gallery-mini">
+                            <div class="gallery-bg">
+                                <img src="https://s6.uupload.ir/files/gallery2_1g5q.jpg" alt="" class="img-fluid gallery-img">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- bottom  -->
+                    <div class="col-sm-12 row h-50   ">
+                        <div class="col-sm-6   d-flex align-items-center gallery-mini">
+                            <div class="gallery-bg">
+                                <img src="https://s6.uupload.ir/files/gallery3_hjk3.jpg" alt="" class="img-fluid gallery-img">
+
+                            </div>
+                        </div>
+                        <div class="col-sm-6    d-flex align-items-center gallery-mini">
+                            <div class="gallery-bg">
+                                <img src="https://s6.uupload.ir/files/gallery4_32s9.jpg" alt="" class="img-fluid gallery-img ">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- Newsletters  -->
+    <div class="container-fluid  news-background">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <div class="col-8 col-md-6 border d-flex flex-column my-5 news-box">
+                <input type="email" placeholder="enter email ..." class="news-input">
+                <button type="button" class="btn btn-outline news-btn">subscribe</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- video section  -->
+    <div class=" container-fluid row flex-row-reverse justify-content-center  m-0 d-none d-md-flex " style="background-color: #454545ca; ;">
+
+        <div class="font mx-3  py-3 px-5 my-1 ">
+            <h1 class="section-font ">امکانات</h1>
+        </div>
+
+    </div>
+    <div class="container-fluid overflow-hidden w-100 h-100" style="padding: 0;">
+        <div style="width: 100%;height: 100vh; " class="container-fluid  overflow-hidden videobigbox p-0">
+
+            <div class="up m-0 p-0 d-flex  justify-content-center align-items-center">
+
+                <div class="col-12  row justify-content-center m-3">
+
+                    <div class="video-cards col-10 col-sm-5 m-3 d-flex flex-row justify-content-center align-items-center px-0 overflow-hidden " id="videocrd1">
+
+                        <a href="#" class="video-link"> <i class="fa fa-music col-4  question-icon  video-icon" id="videocard1-icon"></i> </a>
+                        <div class="question-content col-8 text-center ">
+                            <h2 class="font" style="color: rgb(245, 170, 8); font-size: 2rem; font-family: background:gray " iranNastaliq ";">موسیقی زنده</h2>
+                            <p class=" text-white " style="font-family:   'iranNastaliq';font-size: 26px"> اجرای موسیقی زنده با بهترین خواننده های روز دنی</p>
+                        </div>
+                    </div>
+                    <div class="video-cards col-10 col-sm-5 m-3 d-flex flex-row justify-content-center align-items-center px-0 overflow-hidden" id="videocrd2">
+
+                        <a href="#" class="video-link"> <i class="fa fa-child col-4  question-icon  video-icon" id="videocard2-icon"></i> </a>
+                        <div class="question-content col-8 text-center ">
+                            <h2 class="font" style="color: rgb(245, 170, 8); font-size: 2rem; font-family: " iranNastaliq ";">دارای محیط بازی</h2>
+                            <p class=" text-white " style="font-family:   'iranNastaliq';font-size: 26px"> محیط بازی مخصوص کودکان</p>
+                        </div>
+
+                    </div>
+                    <div class="video-cards col-10 col-sm-5 m-3 d-flex flex-row justify-content-center align-items-center px-0 overflow-hidden" id="videocrd3">
+
+                        <a href="#" class="video-link"> <i class="fa fa-gift col-4  question-icon  video-icon" id="videocard3-icon"></i> </a>
+                        <div class="question-content col-8 text-center ">
+                            <h2 class="font" style="color: rgb(245, 170, 8); font-size: 2rem; font-family: " iranNastaliq ";">هدیه مشتریان</h2>
+                            <p class=" text-white " style="font-family:   'iranNastaliq';font-size: 26px"> شرکت در قرعه کشی مخصوص مشتریان</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="down m-0 p-0 overflow-hidden">
+                <video width="100%" height="100%" muted autoplay loop class="border border-success video"> 
+                    <source src="video/back.ogv" type="video/ogg"/>
+                    <source src="video/back.webm" type="video/webm" />
+                    <source src="video/back.mp4" type="video/mp4"/>
+              </video>
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <!-- chef cards  -->
+
+
+    <div class=" container-fluid  justify-content-center  m-0 d-none d-flex flex-column" style="background-color: #493c37;">
+
+        <div class="font mx-3  py-3 px-5 my-1  d-flex justify-content-center">
+            <h1 class="section-font ">آشپزهای رستوران</h1>
+        </div>
+
+
+
+        <div class="container m-auto  row justify-content-around py-5">
+
+            <div class="card col-12 col-sm-6 p-0 ">
+                <img class="card-img-top" src="image/chef1-woman.jpg" alt="Card image cap">
+                <div class="card-body pt-5">
+                    <h5 class="card-title">Mary Berry</h5>
+                    <p class="card-text text-justify text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                    <a href="#" class="btn btn-primary w-100">اطلاعات بیشتر</a>
+                    <img src="image/chef-icon.jpg" alt="" class="rounded-circle border border-danger chef-icon p-0 card-img-overlay">
+                </div>
+            </div>
+
+            <div class="card col-12 col-sm-6 p-0">
+                <img class="card-img-top" src="image/chef2-man.jpeg" alt="Card image cap">
+                <div class="card-body pt-5">
+                    <h5 class="card-title">Mary Berry</h5>
+                    <p class="card-text text-justify text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                    <a href="#" class="btn btn-primary w-100">اطلاعات بیشتر</a>
+                    <img src="image/chef-icon.jpg" alt="" class="rounded-circle border border-danger chef-icon p-0 card-img-overlay">
+                </div>
+            </div>
+
+            <div class="card  col-12 col-sm-6 p-0">
+                <img class="card-img-top" src="image/chef3.jpg" alt="Card image cap">
+                <div class="card-body pt-5">
+                    <h5 class="card-title">Mary Berry</h5>
+                    <p class="card-text text-justify text-center">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
+                    <a href="#" class="btn btn-primary w-100">اطلاعات بیشتر</a>
+                    <img src="image/chef-icon.jpg" alt="" class="rounded-circle border border-danger chef-icon p-0 card-img-overlay">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid m-0 pt-4 row bg-dark">
+
+
+
+
+        <div class="container p-0 row m-auto">
+
+            <div class=" col-md-6 ">
+                <div class=" container-fluid d-flex justify-content-center">
+
+                    <a href="#">
+                        <i class="fab fa-instagram footer-icon"> </i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-facebook footer-icon"> </i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-twitter footer-icon"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-linkedin footer-icon"> </i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-google-plus footer-icon" footer-icon>   </i>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class=" col-md-6  justify-content-end d-flex">
+                <div class=" p-3" style="width:350px !important">
+                    <h4 class="text-center font" style="font-size:48px !important;">درباره رستوران</h4>
+                    <p class=" text-justify" style="direction:rtl;font-family:sahal;font: size 18px; font-weight:bold;color: white;">
+                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- socials  -->
+
+
+        <!-- detail  -->
+
+
+
+
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
